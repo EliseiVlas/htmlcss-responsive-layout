@@ -3,20 +3,181 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Montserrat, ‘Helvetica Neue’, sans-serif;;
 }
 /* INFO HEADER */
-    
+    header{
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 0px 3px 20px;
+       
+    }
+    h1{
+        font-family: ‘Nerko One’, cursive;
+        color: rgb(255, 153, 0);
+        text-shadow: 1px 1px 2px black;
+        font-size: 44px;
+        vertical-align: middle;
+    }
 
 /* INFO MAIN */
+    main{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(253, 240, 223);
+    }
+    .padding{
+        width: 72%;
+          /* DBAG */
+          /* height: 1000px; */
+          /* background-color: aqua; */
 
+    }
     /* INFO TITOLO */
+        .titolo{
+            padding-top: 38px;
+        }
+        .titolo section{
+            color: gray;
+        }
+        .titolo h1{
+            color: blueviolet;
+            font-size: 48px;
+        }
+
 
     /* INFO IMMAGINE */
+        .immagine{
+            display: flex;
+            margin-top: 30px;
+            box-shadow: 0px 3px 5px 0px black;
+        
+        }
+        .immagine img{
+            height: 100%;
+        }
+        .breve_info{
+            background-color: white;
+            width: 100%;
+            padding: 26px;
+            line-height: 36px;
+        }
+        .immagine h2{
+            padding-bottom: 20px;
+        }
+        .breve_info span{
+            color: gray;
+        }
+        .breve_info b{
+            color: black;
+        }
 
     /* INFO SOCIAL*/
+    .social{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0px;
+    }
+    .social a{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        box-shadow: 0px 2px 1px 0px black;
+        padding: 10px 44px;
+        border-radius: 20px;
+    }
+    .fa-brands{
+        color: blue;
+    }
+    .fa-instagram{
+        color: rgb(255, 106, 131);
+    }
+    .fa-pinterest{
+        color: rgb(255, 87, 87);
+    }
+    .fa-youtube{
+        color: red;
+    }
 
     /* INFO BANER */
+    .bunner img{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .bunner span{
+        font-size: 30px;
+    }
+    .bunner div{
+        height: 20px;
+        width: 100px;
+        border-bottom: 3px solid orange;
+        margin-bottom: 30px;
+    }
+
 
     /* INFO TORTA */
+    #info{
+        font-size: 17px;
+        line-height: 33px;
+        color: rgb(134, 134, 134);
+        padding-bottom: 60px;
+    }
+    #info img{
+        width: 30%;
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .clearfix::after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+    p b{
+        color: black;
+    }
+    
 
 /* INFO FOOTER */
+.row{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(186, 113, 255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    /* dbag */
+    /* height: 170px; */
+}
+.col1{
+    line-height: 30px;
+    padding: 20px;
+
+}
+.col2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+}
+.col2 a{
+    color: white;
+}
+
+/* Dimensioni tablet */
+@media screen and (max-width:768) {
+    
+}
+
+
+/* Dimensioni telefono */
+@media screen and (max-width:480px) {
+    
+    #info p{
+        display: flex;
+        flex-direction: column;
+    }
+}
